@@ -6,7 +6,18 @@ html {
     font-size: 62.5%
 }
 
-body {
+.line-clamp {
+
+    display: -webkit-box;
+
+    -webkit-line-clamp: var(--line-clamp, 1);
+
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+}
+
+.body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
     ;
@@ -15,10 +26,15 @@ body {
 
 
 /* common */
-
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 3);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 
 :root {
-    --primary-color:
+    --primary-color: #152427;
 }
 
 .container {
@@ -169,7 +185,7 @@ a {
 
 .hero__heading {
     width: 368px;
-    color: #152427;
+    color: var(--primary-color);
     font-family: "Public Sans";
     font-size: 50px;
     font-style: normal;
@@ -260,7 +276,7 @@ a {
 
 .hero-active__desc {
 
-    color: #152427;
+    color: var(--primary-color);
     text-align: center;
     font-family: Poppins;
     font-size: 1.4rem;
@@ -339,4 +355,204 @@ a {
 .vector-bottom {
     right: 70.64px;
     bottom: 20px
+}
+
+/* brand */
+.brand {
+    margin-top: 42.31px;
+}
+
+.brand__inner {
+    display: flex;
+    align-items: center;
+
+    width: 1140px;
+    height: 201px;
+    border-radius: 100.5px;
+    background: var(--Scondery-color-light-green, #E2EDDF);
+}
+
+.brand-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand__icon {
+    width: 33px;
+    height: 33px;
+    color: #143C3C
+}
+
+.lv1 {
+    margin: 0 47px 0 121px;
+}
+
+.lv3 {
+    margin: 0 64px 0 51px;
+
+}
+
+.lv4 {
+    margin-right:
+        63px;
+}
+
+.lv5 {
+    display: flex;
+    margin-right: 121px;
+    ;
+}
+
+.brand__icon-lv3 {
+    margin-right: 11px;
+}
+
+.brand__icon-lv5 {
+    margin-right: 14px;
+}
+
+.brand__desc {
+    color: var(--Primary-color-black-green, #143C3C);
+    font-family: Poppins;
+    font-size: 1.9rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.1995rem;
+}
+
+/* service */
+.service {
+    margin-top: 106px;
+    padding-bottom: 8px;
+}
+
+.service-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.service-first__note {
+    position: relative;
+    padding-left: 46px;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.6rem;
+    font-family: 'poppins'
+}
+
+.service-first__note::before {
+    display: inline-block;
+    content: ""
+    ;
+    position: absolute;
+    background: var(--primary-color);
+    width: 25px;
+    height: 1px;
+    left: 0;
+
+
+}
+
+.service-first__heading {
+    position: relative;
+    margin-top: 12px;
+    max-width: 520px;
+    color: var(--primary-color);
+    font-size: 4.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 5.2rem;
+    font-family: 'poppins'
+
+}
+
+.service-first__heading::after {
+    content: "";
+    position: absolute;
+    display: flex;
+    width: 66px;
+    height: 2px;
+    right: 103px;
+    bottom: 19px;
+    background: var(--primary-color)
+}
+
+.wrap-button {
+    display: flex;
+    margin-left: 73px;
+    gap: 15px;
+}
+
+.wrap-button__round {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: #E2EDDF;
+}
+
+.wrap-button__round:hover {
+    background: #143C3C;
+    color: #fff;
+}
+
+/* .wrap-button__active {
+    background: #143C3C;
+    color: #fff;
+} */
+
+.service-media {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+    margin-top: 76px;
+}
+
+.service-row:hover {
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+    transform: scale(1.04);
+    transition: .25s;
+}
+
+.service__img {
+    width: 370px;
+    height: 318px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+
+}
+
+.service-info {
+    margin: 24px 0 23px 18px;
+}
+
+.service__heading {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.2rem;
+    font-family: 'poppins'
+}
+
+.service__desc {
+    max-width: 268px;
+    margin-top: 18px;
+    color: #7D8188;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.4rem;
+    font-family: 'poppins';
 }
