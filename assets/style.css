@@ -12,14 +12,11 @@ body {
     ;
 }
 
-html,
-body {
-    height: 6000px;
-    /* Chiều cao toàn trang */
-    overflow-y: scroll;
-}
+
 
 /* common */
+
+
 :root {
     --primary-color:
 }
@@ -27,7 +24,8 @@ body {
 .container {
     width: 1140px;
     max-width: calc(100% - 58px);
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a {
@@ -35,13 +33,12 @@ a {
 }
 
 /* header */
-.header {
-    display: block;
-    background: orange;
+.header-fixed {
+    background: #fff;
     position: sticky;
-    z-index: 2;
-    top: 0px;
-    padding-top: 15px;
+    top: -15px;
+    z-index: 10;
+
 
 
 }
@@ -49,7 +46,7 @@ a {
 .header-top {
     display: flex;
     position: relative;
-    padding: 13px 0;
+    padding: 28px 0 13px;
     align-items: center;
 
 }
