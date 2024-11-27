@@ -12,6 +12,13 @@ body {
     ;
 }
 
+html,
+body {
+    height: 6000px;
+    /* Chiều cao toàn trang */
+    overflow-y: scroll;
+}
+
 /* common */
 :root {
     --primary-color:
@@ -29,16 +36,22 @@ a {
 
 /* header */
 .header {
-    padding-top: 23px;
-    min-height: 100vh;
+    display: block;
+    background: orange;
+    position: sticky;
+    z-index: 2;
+    top: 0px;
+    padding-top: 15px;
+
 
 }
 
 .header-top {
     display: flex;
     position: relative;
-    padding-bottom: 13px;
+    padding: 13px 0;
     align-items: center;
+
 }
 
 .header-top::after {
@@ -47,8 +60,11 @@ a {
     content: "";
     width: 16px;
     height: 2px;
+    ;
+    right: 0;
+    left: 0;
     bottom: 0;
-    margin-left: 560px;
+    margin: 0 auto;
     background: var(--Primary-color-black-green, #143C3C);
 }
 
@@ -81,11 +97,12 @@ a {
 
 .navbar__link {
     font-family: "Public Sans";
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     font-weight: 500;
     line-height: 2.8rem;
     color: #575D5E;
 }
+
 
 .navbar__item {
     padding: 4px 19px;
@@ -112,7 +129,7 @@ a {
     background: #143C3C;
     color: white;
     font-family: "Public Sans";
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     font-weight: 500;
     line-height: 2.8rem;
 }
@@ -135,24 +152,24 @@ a {
 } */
 
 /* hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
 
+    /* padding: 28px 15px 0 0; */
+}
 
-
+.hero__inner {
+    display: flex;
+    position: relative;
+    padding-bottom: 87.69px;
+}
 
 .hero__content {
     width: 43%;
     margin-top: 103px
 }
 
-
-
-.hero {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    padding-bottom: 87.69px;
-    /* padding: 28px 15px 0 0; */
-}
 
 .hero__heading {
     width: 368px;
@@ -291,16 +308,19 @@ a {
     top: 35.61px;
     left: 254.61px;
     transform: rotate(9.392deg);
+    z-index: 1;
 }
 
 .vector-top {
-    top: 27px;
-    left: 300px
+    top: 27.93px;
+    left: 297px;
+
 }
 
 .flower-bottom {
     bottom: 51.24px;
     right: 34.12px;
+    z-index: 1;
 }
 
 .vector-bottom {
