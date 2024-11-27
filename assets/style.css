@@ -37,7 +37,6 @@ a {
     background: #fff;
     position: sticky;
     top: -15px;
-    z-index: 10;
 
 
 
@@ -271,18 +270,35 @@ a {
 }
 
 .hero__media {
+    position: relative;
     width: calc(57% + 40px);
     margin-top: 60px;
     margin-right: 20px;
 
 }
 
+.hero__bg {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    border-radius: 340px;
+    background: #4DBB9A;
+    bottom: 81px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+    filter: blur(137px);
+}
+
 .hero__images {
 
-
+    position: relative;
     display: flex;
     gap: 20px;
 }
+
+
 
 .hero__img {
     width: 202px;
