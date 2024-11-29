@@ -72,6 +72,7 @@ a {
     background: #fff;
     position: sticky;
     top: -15px;
+    z-index: 1;
 
 
 
@@ -882,7 +883,7 @@ a {
 
 }
 
-.process-wrap:hover .process-wrap::after {}
+
 
 .process-wrap::after {
     position: absolute;
@@ -981,4 +982,131 @@ a {
     width: 450px;
     height: 444px;
     object-fit: cover;
+}
+
+/* project */
+.project {
+    background: #143C3C;
+}
+
+
+
+.project-content {
+    padding: 116px 0 63px
+}
+
+.project__heading {
+    max-width: 457px;
+    position: relative;
+    color: #fff
+}
+
+.project__heading:after {
+    content: "";
+    position: absolute;
+    display: flex;
+    width: 66px;
+    height: 2px;
+    right: 103px;
+    bottom: 25px;
+    background: #83A17D;
+    ;
+}
+
+.project-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-detail {
+    max-width: 52%;
+}
+
+.project__desc {
+    padding-top: 13px;
+    color: #6A8383;
+
+    font-family: "Public Sans";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.8rem;
+}
+
+.project-wrap2 {
+    display: inline-block;
+    margin-top: 13px;
+}
+
+.project__browse {
+
+    color: #FFF;
+    font-family: "Public Sans";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.8rem
+}
+
+.project__arrow {
+    margin-left: 26px;
+    color: #80A07B;
+}
+
+.project-image {
+    position: relative;
+    margin-top: 72px;
+}
+
+.project__img {
+    width: 1140px;
+    height: 544px;
+    object-fit: cover;
+    border-radius: 22px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+
+
+}
+
+
+.project-play-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 40%;
+    height: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    background: #000000B2;
+}
+
+.project-play-btn:hover {
+    background-color: black;
+    color: #DDDCDC
+}
+
+.project__play {
+
+    display: block;
+
+    width: 36px;
+    height: 36px;
+    color: white;
+}
+
+.project__flower {
+    position: absolute;
+    top: -72px;
+    right: -72px
+}
+
+.project__vector {
+    position: absolute;
+    top: -165px;
+    right: -72px
 }
