@@ -46,6 +46,7 @@ html {
 
 a {
     text-decoration: none;
+    color: inherit
 }
 
 .first-note {
@@ -572,7 +573,6 @@ a {
 .introduce {
     display: flex;
     margin-top: 117.11px;
-    height: 570px
 }
 
 .introduce-content {
@@ -818,4 +818,167 @@ a {
     font-style: normal;
     font-weight: 600;
     line-height: 5.2rem;
+}
+
+/* process */
+.process {
+    margin: 79px 0 148px
+}
+
+.process-content {
+    position: relative;
+}
+
+.process__note {
+    position: relative;
+
+    padding-left: 53px
+}
+
+.process__note::before {
+    display: flex;
+    align-items: center;
+    content: "";
+    position: absolute;
+    background: var(--primary-color);
+    width: 25px;
+    height: 1px;
+    left: 7px;
+    bottom: 50%;
+}
+
+.process__heading {
+    position: relative;
+    max-width: 477px;
+    margin-top: 20px;
+}
+
+.process__heading::after {
+    content: "";
+    position: absolute;
+    display: flex;
+    width: 66px;
+    height: 2px;
+    right: -9px;
+    bottom: 19px;
+    background: var(--primary-color);
+}
+
+.process-wrap {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 1140px;
+    height: 185px;
+    border-radius: 33px;
+    background: #fff;
+    transition: .25s;
+    cursor: pointer;
+
+}
+
+.process-wrap:hover {
+    background: #E2EDDF;
+
+}
+
+.process-wrap:hover .process-wrap::after {}
+
+.process-wrap::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(180deg, #83A17D 4.17%, rgba(131, 161, 125, 0.00) 36.46%);
+    bottom: 0;
+}
+
+.process-wrap:hover::after {
+    opacity: 0;
+    /* Làm mờ đường viền */
+}
+
+
+.process-wrap:hover+.process-wrap::after {
+    opacity: 0;
+    /* Làm mờ đường viền liền kề */
+}
+
+.process-wrap:nth-child(1) *:nth-child(2) {
+    display: block;
+    /* Đưa phần tử xuống dòng */
+    width: 100%;
+}
+
+.process-wrap:first-child {
+    margin-top: 81px;
+}
+
+.process__number {
+    margin: 0 64px 0 30px;
+    color: var(--primary-color);
+    font-family: Poppins;
+    font-size: 7.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 5.2rem;
+}
+
+.process__idea {
+    color: #152427;
+    font-family: Poppins;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.2rem;
+}
+
+.process-wrap2 {
+    margin-top: 60px
+}
+
+.process__learn-more {
+    display: block;
+    padding: 22px 0 22px;
+}
+
+.process__learn-more-a {
+    padding: 22px 0 22px;
+    color: #575D5E;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.8rem;
+    text-decoration: underline
+}
+
+.process-project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.process__desc {
+    width: 53.77%;
+    margin-right: 41px;
+    margin-bottom: -23px;
+    color: #7D8188;
+    font-family: "Public Sans";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.8rem
+}
+
+.process-image {
+    position: absolute;
+    top: -36px;
+    right: 92px;
+}
+
+.process__img {
+    width: 450px;
+    height: 444px;
+    object-fit: cover;
 }
