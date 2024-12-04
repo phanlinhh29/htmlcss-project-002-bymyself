@@ -1458,15 +1458,19 @@ a {
 
 }
 
-.footer__desc {
+.footer__input {
 
-    padding: 25px 132px 36px 0;
-    color: #6A8383;
-    font-family: Poppins;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    background: transparent;
+    width: 314px;
+    height: 60px;
+    color: #6a8383;
     font-size: 2.2rem;
-    font-style: normal;
     font-weight: 600;
-    line-height: 2.2rem;
+    line-height: 1;
+    cursor: pointer;
 }
 
 .footer__vector {
